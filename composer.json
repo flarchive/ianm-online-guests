@@ -1,0 +1,93 @@
+{
+    "name": "ianm/online-guests",
+    "description": "Display the number of guests browsing your forum",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "flarum/core": "^1.8.13",
+        "fof/forum-widgets-core": "^1.0.0"
+    },
+    "support": {
+        "forum": "https://discuss.flarum.org/d/39401",
+        "source": "https://github.com/imorland/flarum-ext-online-guests-widget",
+        "issues": "https://github.com/imorland/flarum-ext-online-guests-widget/issues"
+    },
+    "suggest": {
+        "fof/redis": "Required for Redis-based guest session tracking"
+    },
+    "authors": [
+        {
+            "name": "IanM",
+            "email": "ian@flarum.org",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IanM\\OnlineGuests\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Online Guests Widget",
+            "category": "forum-widget",
+            "icon": {
+                "name": "fas fa-users",
+                "backgroundColor": "#0072e3",
+                "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "backendTesting": true,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "IanM\\OnlineGuests\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:unit": "phpunit -c tests/phpunit.unit.xml",
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:unit": "Runs all unit tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "analyse:phpstan": "Run static analysis"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0.0",
+        "flarum/phpstan": "*",
+        "fof/redis": "*"
+    }
+}
