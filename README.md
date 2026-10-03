@@ -2,13 +2,15 @@
 
 > **Read-only archive of released versions of ianm/online-guests.** Not for installation: use [Packagist](https://packagist.org/packages/ianm/online-guests) or the [upstream repository](https://github.com/imorland/flarum-ext-online-guests-widget).
 
-**0** versions archived · Latest: [`2.0.0-beta.1`](https://github.com/flarchive/ianm-online-guests/tree/archive/v2.0.0-beta.1) · License: `MIT` · Flarum: `^2.0.0`
+**3** versions archived · Latest: [`2.0.0-beta.1`](https://github.com/flarchive/ianm-online-guests/tree/archive/v2.0.0-beta.1) (stable: [`1.0.0`](https://github.com/flarchive/ianm-online-guests/tree/archive/v1.0.0)) · License: `MIT` · Flarum: `^2.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.0.0` | 2023-10-04 | `^1.2.0` | [Browse](https://github.com/flarchive/ianm-online-guests/tree/archive/v1.0.0) |
+| `1.1.0` | 2026-06-09 | `^1.8.13` | [Browse](https://github.com/flarchive/ianm-online-guests/tree/archive/v1.1.0) |
+| `2.0.0-beta.1` | 2026-06-09 | `^2.0.0` | [Browse](https://github.com/flarchive/ianm-online-guests/tree/archive/v2.0.0-beta.1) |
 
 Catalog entry: [packages/ianm-online-guests.json](https://github.com/flarchive/archive-index/blob/main/packages/ianm-online-guests.json)
 
